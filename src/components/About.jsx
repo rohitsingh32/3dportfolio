@@ -7,7 +7,14 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
+import './about.css';
+import AboutImage from '../assets/about.png';
+import Resume from '../assets/Resume.pdf';
+import { GoArrowDown } from 'react-icons/go';
+
+
 const ServiceCard = ({ index, title, icon }) => (
+
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -48,7 +55,7 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         I'm a skilled software developer with experience in ECMAScript and
-        JavaScript, and expertise in frameworks like React.js and Node.js, 
+        JavaScript, and expertise in frameworks like React.js and Node.js,
         I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
@@ -59,6 +66,41 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+
+
+      <div className="container about__container" >
+        <div className="about__left">
+          <div className="about__portrait">
+            <img src={AboutImage} alt="" />
+          </div>
+        </div>
+        <div className="about__right">
+          <h2>About Me</h2>
+
+
+          <div className='para'>
+            <p>
+              Bulding projects my clients love have always been my passion
+              Being in the web development industry for over 1 year and serving
+              more than 70 happy clients worldwide, I'm always motivated to
+              more!
+            </p>
+            <p>
+              Hi, my name is Rohit Singh from BIhar. Rohtas. Sasaram I'm full-stack web
+              developer with a Bachelors degree in Computer Science Engineering.
+              My top priority is to get your business online the right way, giving your
+              industry-standard design and all the functionality you need to
+              operate smoothly online. Get in touch today with details of your
+              project let's get started! Check out resume below!
+            </p>
+          </div>
+
+          <a href={Resume} download className='btn primary'>Resume<GoArrowDown className="arrow" /></a>
+
+        </div>
+      </div>
+
+
     </>
   );
 };

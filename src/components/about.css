@@ -1,0 +1,125 @@
+.about__container{
+ display: flex;
+ margin-top: 5rem;
+ display: grid;
+ grid-template-columns: 35% 53%;
+ gap: 12%;
+   
+}
+.about__right h2{
+    
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: 900;
+   margin-bottom: 1rem;
+    
+}
+
+
+.about__portrait img{
+    height: 400px;
+   
+    
+}
+
+
+
+
+
+
+
+
+.about__right p {
+    margin-bottom: 0.8rem;
+    width: fit-content;
+}
+.about__right .btn {
+    margin-top: 2.5rem;
+    background-color: rgb(27, 24, 76);
+    padding: .3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 1rem;
+    font-weight: 900;
+}
+.about__right .btn:hover{
+    background: transparent;
+}
+
+.para {
+    text-align: justify;
+}
+
+
+/* ==========MEDIA QUIERS(tablets)=========== */
+
+@media screen and (min-width: 1200px) {
+   .about__left {
+        padding: 3rem;
+        margin-bottom: -6rem;
+        margin-top: -5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+   
+    .about__right{
+        grid-template-columns: 1fr;
+    }
+    .about__right h2 {
+        text-align: center;
+    }
+    
+    .para p{
+        font-weight: 200;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+   
+    .para p{
+        word-break: break-all;
+        font-size: .8rem;
+       
+    }
+    
+ 
+}
+@media screen and (max-width: 450px) {
+  
+    
+    .about__portrait img{
+        height: 350px;
+       
+        
+    }
+    .about__right h2{
+    
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+        font-weight: 700;
+       margin-bottom: .5rem;
+        
+    }
+}
+
+   
+@media screen and (max-width: 300px) {
+    
+    .about__right h2{
+         position: relative;
+        top:-4rem;
+        left: -4rem; 
+         font-size: 1.5rem;
+    }
+    
+}
+
+
+

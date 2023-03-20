@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+  
+
+.clock{
+    display: flex;
+    justify-content: center;
+   
+    
+    
+    
+}
+.wrapper {
+    
+    height: 100px;
+    width: 250px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    background: red;
+    border-radius: 5rem;
+    animation: animate 10s linear infinite;
+}
+.wrapper .display
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper .display {
+    z-index: 999;
+    background-color: blue;
+  
+    height: 70px;
+    width: 220px;
+    border-radius: 6rem;
+    text-align: center;
+    
+}
+
+.wrapper .display #time {
+    line-height: 85px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    background-clip: text; 
+    
+    animation: animate 1.5s linear infinite;
+   
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+@media screen {
+    
+}
+
+
+
+
+/*============== {FOOTER SECTION} ===============*/
+
+
+.footer{
+    margin-top: -5rem;
+   background: var(--color-primary);
+    /* margin-bottom: -15rem; */
+   padding: 3rem 0;
+   text-align: center;
+   font-size: 0.9rem;
+  
+   
+}
+.footer__logo{
+       font-size: 2rem;
+       font-weight: 500;
+       margin-bottom: 2rem;
+       display: inline-block;
+}
+.permalinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+    margin-top: 5rem;
+}
+
+.permalinks li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.footer__socials{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    
+}
+.footer__socials a{
+    background-color: rgb(30, 23, 70);
+    color: var(--color-primary);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    
+}
+.footer__socials a:hover{
+        text-decoration: underline;
+        color: var(--color-light);
+        background: transparent;
+        border: 1px solid;
+        transition: 1s;
+        
+}
+.footer__copyright {
+    margin-bottom: 4rem;
+    color: var(--color-light);
+    font-size: large;
+    
+}
+
+.footer{
+    
+    background-color: var(--background-1);
+    transition: all 1s;
+}
